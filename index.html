@@ -181,7 +181,7 @@
            </section>
        </div>
 
-        <section class="bg-[#F7F8F8] inter-font" id="hiddenInput">
+        <section class="bg-[#F7F8F8] inter-font" id="BuyTickets">
             <div class="container mx-auto ">
                 <div class="grid grid-cols-12">
                     <div class="col-span-6 relative">
@@ -246,8 +246,9 @@
                                     <h6 class=" text-black font-medium">Total Price</h6>
                                     <h6 class=" text-black font-medium">BDT <span id="total-Price">0</span></h6>
                                 </div>
+                                <p class="ml-5"> OFF :<span id="descoundprise"></span></p>
                                 <div>
-                                    <div  class="m-5 ">
+                                    <div  class="m-5 " id="hiddenInput">
                                         <input id="input-field" type="text" placeholder="Have any copupon?"
                                             class="input w-full max-w-[300px] " />
                                         <button id="apply-btn" class="btn  bg-[#1DD100] text-white">Apply</button>
@@ -257,9 +258,9 @@
                                         <h6 class="  text-black font-medium">BDT <span id="grand-Total">0</span></h6>
                                     </div>
 
-                                    <!-- You can open the modal using ID.showModal() method -->
+                                    
                                     <div>
-                                        <!-- <button class="btn" onclick="my_modal_4.showModal()">open modal</button> -->
+                                    
                                         <button class="btn w-[420px]  bg-[#1DD100] my-5 py-8 text-white"
                                             onclick="my_modal_4.showModal()">Next</button>
                                         <dialog id="my_modal_4" class="modal">

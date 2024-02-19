@@ -61,8 +61,9 @@ for (const btn of setBtn) {
                     devidet *= 20  
                     const result = total - devidet;
                     grandTotal.innerText = result
+                    document.getElementById("descoundprise").innerText = devidet;
                 }
-                document.getElementById("hiddenInput").classList.add("hidden")
+                 document.getElementById("hiddenInput").classList.add("hidden")
             }
             else if(copun === "NEW15"){
                 if (total === 2200) {
@@ -70,6 +71,7 @@ for (const btn of setBtn) {
                     devidet *= 15  
                     const result = total - devidet;
                     grandTotal.innerText = result
+                    document.getElementById("descoundprise").innerText = devidet;
                 }
                 document.getElementById("hiddenInput").classList.add("hidden")
             }
