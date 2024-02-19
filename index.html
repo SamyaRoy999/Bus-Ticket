@@ -24,7 +24,8 @@
         .ralway-font {
             font-family: "Raleway", sans-serif;
         }
-        .inter-font{
+
+        .inter-font {
             font-family: "Inter", sans-serif;
         }
     </style>
@@ -87,7 +88,7 @@
     </header>
     <main>
         <!-- copun offer section -->
-        <section class="">
+        <section class="container mx-auto">
             <h3 class="text-4xl font-bold text-center mt-14 mb-10">Best offers for you</h3>
             <div class="flex flex-col lg:flex-row gap-5 justify-center">
                 <div class="flex justify-center items-center bg-[#FFBF0F] px-12 rounded-3xl">
@@ -97,7 +98,7 @@
                         <p class="inter-font text-[18] font-medium">use by January 2024</p>
                     </div>
                     <img src="./images/cupon-devider.png" alt="">
-                    <div  class="ml-8">
+                    <div class="ml-8">
                         <h3 class="font-bold text-[32px]">NEW15</h3>
                         <p class="font-medium text-[20px]">Coupon Code</p>
                     </div>
@@ -109,7 +110,7 @@
                         <p class="inter-font text-[18] font-medium">use by January 2024</p>
                     </div>
                     <img src="./images/cupon-devider.png" alt="">
-                    <div  class="ml-8">
+                    <div class="ml-8">
                         <h3 class="font-bold text-[27px]">Couple 20</h3>
                         <p class="font-medium text-[20px]">Coupon Code</p>
                     </div>
@@ -120,13 +121,189 @@
             </div>
         </section>
         <!-- pribohon ditailse -->
-        <section class="border rounded-full mt-20 border-t-[#1dd100]">
-            <div>
+        <!-- border container mx-auto bg-[#F7F8F8] rounded-full mt-20 border-t-[#1dd100] -->
+        <section class="container mx-auto ">
+            <div class="">
                 <h3 class="text-4xl font-bold text-center mt-20 mb-10">P.H Paribahan</h3>
+                <p class="text-center font-normal text-[18px] inter-font">Yes, you can run unit tests and view the
+                    results directly within the app. <br> The integrated testing features allow for a streamlined .</p>
+            </div>
+            <div class="mt-24 grid grid-cols-12 items-center">
+                <div class="col-span-9 m-8">
+                    <div class="flex justify-between items-center">
+                        <div class="flex">
+                            <img src="./images/bus-logo.png" alt="">
+                            <div class="m-4">
+                                <h3 class="font-bold text-[32px]">Greenline Paribahan</h3>
+                                <p>Coach-009-WEB ! AC_Business</p>
+                            </div>
+                        </div>
+                        <div class="">
+                            <a class="btn font-bold text-xl inter-font text-[#1DD100]">
+                                <img src="./images/seat-green.png" alt="" srcset="">
+                                <span> <span id="available-set">8</span> Seats left</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-[#F7F8F8]">
+                        <div class="flex justify-between bg-[#F7F8F8] p-8">
+                            <h5 class="text-xl font-semibold">Route</h5>
+                            <p class="text-xl font-bold">Dhaka - Sylhet</p>
+                        </div>
+                        <div class="border border-gray-300 border-dashed"></div>
+                        <div class="flex justify-between bg-[#F7F8F8]  p-8">
+                            <h5 class="text-xl font-semibold">Departure Time</h5>
+                            <p class="text-xl font-bold">9:00 PM</p>
+                        </div>
+                        <div class="border border-gray-300 border-dashed"></div>
+                        <div class="flex justify-between p-8">
+                            <button class="btn">Boarding Point - Laxmipur</button>
+                            <button class="btn">Dropping Point - Bogura</button>
+                            <button class="btn">Est. Time - 11 Hour</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center w-[300px] flex items-center">
+                    <div>
+                        <img src="./images/info-devider.png" alt="">
+                    </div>
+                    <div>
+                        <img src="./images/fare.png" class="mx-auto mb-3" alt="">
+                        <h3 class="font-bold text-[32px]">550 Taka</h3>
+                        <p class="font-semibold text-xl">Per Seat</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#F7F8F8] inter-font">
+            <div class="container mx-auto ">
+                <div class="grid grid-cols-12">
+                    <div class="col-span-6 relative">
+                        <h5 class="font-semibold text-2xl text-zinc-950 m-5">Select Your Seat</h5>
+                        <div class="border border-gray-300 border-dashed"></div>
+                        <div class="flex justify-between">
+                            <div class="flex gap-2 m-5">
+                                <div>
+                                    <img src="./images/seat-gray.png" alt="">
+                                </div>
+                                <p class="text-lg font-bold inter-font ">Available</p>
+                            </div>
+                            <div class="flex gap-2 m-5">
+                                <div>
+                                    <img src="./images/seat-green-filled.png" alt="">
+                                </div>
+                                <p class="text-lg font-bold inter-font text-[#1DD100] ">Selected</p>
+                            </div>
+                        </div>
+                        <div class="border border-gray-300 border-dashed"></div>
+                        <button class="btn bg-gray-300 px-7 py-1 flex absolute my-5 right-0 "><img
+                                src="./images/tabler-icon-steering-wheel.png" alt=""></button>
+                        <div id="set-btn" class="grid grid-cols-5 mt-24 gap-4">
+                            <button id="btnId" class="btn   px-7 py-1 inter-font">A1</button>
+                            <button id="btnId" class="btn px-7 py-1 inter-font">A2</button>
+
+                            <br>
+                            <button id="btnId" class="btn  px-7 py-1 inter-font">A3</button>
+                            <button id="btnId" class="btn  px-7 py-1 inter-font">A4</button>
+                            <button id="btnId" class="btn  px-7 py-1 inter-font">B1</button>
+                            <button id="btnId" class="btn  px-7 py-1 inter-font">B2</button>
+
+                            <br>
+                            <button id="btnId" class="btn  px-7 py-1 inter-font">B3</button>
+                            <button id="btnId" class="btn  px-7 py-1 inter-font">B4</button>
+                        </div>
+                    </div>
+                    <div class="border-l-2 m-7 col-span-1 border-gray-400 border-dashed"></div>
+                    <div class="col-span-5">
+                        <h5 class="font-semibold text-2xl text-zinc-950 mt-5 mb-5 -ml-10">Select Your Seat</h5>
+                        <div class="border border-gray-300 border-dashed -ml-10"></div>
+                        <div class="">
+                            <div class="overflow-x-auto bg-[#F7F8F8] mt-5">
+                                <table class="table">
+                                    <!-- head -->
+                                    <thead>
+                                        <tr class="font-medium text-base inter-font text-black">
+                                            <th>Seat <span id="increment" class="badge bg-[#1DD100] text-white gap-2">0 </span></th>
+                                            <th>Class</th>
+                                            <th>Price</th>
+                                        </tr>
+
+                                    </thead>
+                                    <tbody id="table">
+                                        
+                                        
+                                    </tbody>
+                                </table>
+                                <div class="border border-gray-300 w-[420px] m-2"></div>
+                                <div class="flex justify-around gap-28 -ml-8">
+                                    <h6 class=" text-black font-medium">Total Price</h6>
+                                    <h6 class=" text-black font-medium">BDT <span id="total-Price">0</span></h6>
+                                </div>
+                                <div>
+                                    <div class="m-5">
+                                        <input type="text" placeholder="Have any copupon?"
+                                            class="input w-full max-w-[300px] " />
+                                        <button class="btn bg-[#1DD100] text-white">Apply</button>
+                                    </div>
+                                    <div class="flex justify-around gap-28 -ml-8">
+                                        <h6 class=" text-black font-medium">Grand Total</h6>
+                                        <h6 class="  text-black font-medium">BDT <span id="grand-Total">1100</span></h6>
+                                    </div>
+                                    <button class="btn w-[420px]  bg-[#1DD100] my-5 py-8 text-white">Next</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
 
             </div>
         </section>
     </main>
+    <footer class=" p-10 inter-font  bg-black text-neutral-content">
+        <div class="flex justify-between">
+
+            <aside>
+                <h1 class="font-extrabold text-4xl ralway-font mb-3">P-Ticket</h1>
+                <p>P-Ticket is a digital platform to make your <br> daily commuting better.</p>
+            </aside>
+            <nav>
+                <p class="mb-3">Download our app</p>
+                <div class="flex items-center border-2 border-white rounded-lg p-2">
+                    <div>
+                        <img src="./images/playstore.png" alt="">
+                    </div>
+                    <div>
+                        <p>GET IT ON</p>
+                        <h5 class="font-extrabold text-3xl">Google Play</h5>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="border border-x-neutral-100 w-full border-dashed my-5 "></div>
+        <div class="flex justify-between">
+            <div>
+                <p>@all rights reserved, P-Ticket services limited.2024</p>
+            </div>
+            <div class="flex gap-4">
+                <p>Terms & condition</p>
+                <p>Terms & condition</p>
+                <p>Terms & condition</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
 </body>
 
 </html>
+<!-- 
+    Stap 1: cite click korle bg color change hobe
+    Stap 2: all sit teke 1 1 kore kombe
+    stap 3: sit teke 1 1 kore barde
+    stap 4: sit te data append korte hode  semple
+            A1   econumic   550
+    stap 5: totle prise dekabe
+    stap 6: sit 4 tak besi silet kora jabe  na
+    
+    setap 7: copun valed hole descount prise dekabe and input hedin hode-->
