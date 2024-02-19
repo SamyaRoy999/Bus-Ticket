@@ -9,6 +9,9 @@ for (const btn of setBtn) {
 
 
     btn.addEventListener("click", function () {
+        if (setIncrement===4) {
+            return
+        }
         btn.classList.add("bg-[#1dd100]");
         availableDicment--;
         setIncrement++;
@@ -45,10 +48,33 @@ for (const btn of setBtn) {
 
         const grandTotal = document.getElementById("grand-Total")
         grandTotal.innerText = total;
-        if (total === 2200) {
-            console.log("lkjsadf");
-        }
 
+        const apply = document.getElementById("apply-btn")
+        apply.addEventListener("click", function () {
+            
+            const copunElement = document.getElementById("input-field").value;
+            const copun = copunElement.toUpperCase().split(" ").join("");
+            console.log(copun);
+            if (copun === "COUPLE20") {
+                if (total === 2200) {
+                    let devidet = total / 100;
+                    devidet *= 20  
+                    const result = total - devidet;
+                    grandTotal.innerText = result
+                }
+                document.getElementById("hiddenInput").classList.add("hidden")
+            }
+            else if(copun === "NEW15"){
+                if (total === 2200) {
+                    let devidet = total / 100;
+                    devidet *= 15  
+                    const result = total - devidet;
+                    grandTotal.innerText = result
+                }
+                document.getElementById("hiddenInput").classList.add("hidden")
+            }
+        })
 
+      
     })
 }

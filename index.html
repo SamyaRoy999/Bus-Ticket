@@ -80,7 +80,7 @@
                         <p>Yes, you can run unit tests and view the results directly within the app. <br> The integrated
                             testing features allow for a streamlined .</p>
 
-                        <button class="btn btn-active bg-[#1dd100] border-none mt-7">Buy Tickets</button>
+                        <button  class="btn btn-active bg-[#1dd100] border-none mt-7"><a href="#BuyTickets"> Buy Tickets</a></button>
                     </div>
                 </div>
             </div>
@@ -122,7 +122,7 @@
         </section>
         <!-- pribohon ditailse -->
         <!-- border container mx-auto bg-[#F7F8F8] rounded-full mt-20 border-t-[#1dd100] -->
-        <section class="container mx-auto ">
+        <section  class="container mx-auto ">
             <div class="">
                 <h3 class="text-4xl font-bold text-center mt-20 mb-10">P.H Paribahan</h3>
                 <p class="text-center font-normal text-[18px] inter-font">Yes, you can run unit tests and view the
@@ -131,9 +131,12 @@
             <div class="mt-24 grid grid-cols-12 items-center">
                 <div class="col-span-9 m-8">
                     <div class="flex justify-between items-center">
-                        <div class="flex">
-                            <img src="./images/bus-logo.png" alt="">
-                            <div class="m-4">
+                        <div class="flex items-center">
+                            <div>
+
+                                <img src="./images/bus-logo.png" alt="">
+                            </div>
+                            <div class="m-4" id="BuyTickets">
                                 <h3 class="font-bold text-[32px]">Greenline Paribahan</h3>
                                 <p>Coach-009-WEB ! AC_Business</p>
                             </div>
@@ -176,7 +179,7 @@
             </div>
         </section>
 
-        <section class="bg-[#F7F8F8] inter-font">
+        <section class="bg-[#F7F8F8] inter-font" id="hiddenInput">
             <div class="container mx-auto ">
                 <div class="grid grid-cols-12">
                     <div class="col-span-6 relative">
@@ -224,33 +227,64 @@
                                     <!-- head -->
                                     <thead>
                                         <tr class="font-medium text-base inter-font text-black">
-                                            <th>Seat <span id="increment" class="badge bg-[#1DD100] text-white gap-2">0 </span></th>
+                                            <th>Seat <span id="increment" class="badge bg-[#1DD100] text-white gap-2">0
+                                                </span></th>
                                             <th>Class</th>
                                             <th>Price</th>
                                         </tr>
 
                                     </thead>
                                     <tbody id="table">
-                                        
-                                        
+
+
                                     </tbody>
                                 </table>
-                                <div class="border border-gray-300 w-[420px] m-2"></div>
+                                <div class="border border-gray-300 w-[400px] m-2"></div>
                                 <div class="flex justify-around gap-28 -ml-8">
                                     <h6 class=" text-black font-medium">Total Price</h6>
                                     <h6 class=" text-black font-medium">BDT <span id="total-Price">0</span></h6>
                                 </div>
                                 <div>
-                                    <div class="m-5">
-                                        <input type="text" placeholder="Have any copupon?"
+                                    <div  class="m-5 ">
+                                        <input id="input-field" type="text" placeholder="Have any copupon?"
                                             class="input w-full max-w-[300px] " />
-                                        <button class="btn bg-[#1DD100] text-white">Apply</button>
+                                        <button id="apply-btn" class="btn  bg-[#1DD100] text-white">Apply</button>
                                     </div>
                                     <div class="flex justify-around gap-28 -ml-8">
                                         <h6 class=" text-black font-medium">Grand Total</h6>
-                                        <h6 class="  text-black font-medium">BDT <span id="grand-Total">1100</span></h6>
+                                        <h6 class="  text-black font-medium">BDT <span id="grand-Total">0</span></h6>
                                     </div>
-                                    <button class="btn w-[420px]  bg-[#1DD100] my-5 py-8 text-white">Next</button>
+
+                                    <!-- You can open the modal using ID.showModal() method -->
+                                    <div>
+                                        <!-- <button class="btn" onclick="my_modal_4.showModal()">open modal</button> -->
+                                        <button class="btn w-[420px]  bg-[#1DD100] my-5 py-8 text-white"
+                                            onclick="my_modal_4.showModal()">Next</button>
+                                        <dialog id="my_modal_4" class="modal">
+                                            <div class="modal-box w-11/12 max-w-5xl flex justify-center items-center">
+                                                <div class="text-center">
+                                                    <div class="flex justify-center m-12">
+                                                        <img src="./images/success.png" alt="">
+                                                    </div>
+                                                    <h3 class="font-bold text-2xl text-[#27AE60]">SUCCESS</h3>
+                                                    <p class="py-4 font-medium text-xl text-[#4A4A4A]">
+                                                        Thank you for Booking Our Bus Seats. <br>
+                                                        We are working hard to find the best service and deals for you
+                                                    </p>
+                                                    <p class="font-light text-xl">Shortly you will find a confirmation in your email.</p>
+                                                    <div class="flex justify-center">
+
+                                                        <div class="modal-action ">
+                                                            <form method="dialog"> 
+    
+                                                                <button for="my_modal_6" class="btn rounded-full text-white px-20 bg-[#27AE60] font-semibold text-xl">Continue</button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </dialog>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -297,13 +331,3 @@
 </body>
 
 </html>
-<!-- 
-    Stap 1: cite click korle bg color change hobe
-    Stap 2: all sit teke 1 1 kore kombe
-    stap 3: sit teke 1 1 kore barde
-    stap 4: sit te data append korte hode  semple
-            A1   econumic   550
-    stap 5: totle prise dekabe
-    stap 6: sit 4 tak besi silet kora jabe  na
-    
-    setap 7: copun valed hole descount prise dekabe and input hedin hode-->
